@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div id="app">
+      {{ message }}
+      <br />
+      {{ name }}
+      <br />
+      {{ getVariable() }}
+      <br />
+      {{welcome("Amit")}}
+      <br />
+      <a v-bind:href="urlLink">google</a>
+      <br />
+      <h2>Couter : {{ count }}</h2>
+      <button v-on:click="increment()">Increment</button>
+      <br />
+      <input type="text" v-model="textValue">
+      {{textValue}}
+      <br />
+      <input type="text" v-model=
+      {{textValue}}
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
