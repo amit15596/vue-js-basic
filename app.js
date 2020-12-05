@@ -1,26 +1,37 @@
-new Vue({
-    el: "#app",
-    data: {
-      message: "Wel Come Vue Js 2!",
-      name: "Hello, Shahu Amit Kumar",
-      job: "Web-Developer",
-      urlLink:"www.google.com",
-      count: 0,
-      textValue: "",
-      meterValue:""
-    },
-    methods: {
-        getVariable() {
-            return this.job;
-        },
-        welcome(name) {
-            return "Hello "+name;
-        },
-        increment() {
-            return this.count++
-        }
-    }
-    // camputed():{
+Vue.component("owt",{
+    template : "<p>this is called template</p>"
+})
 
-    // }
-  });
+
+new Vue({
+  el: "#app",
+  data: {
+    message: "Wel Come Vue Js 2!",
+    name: "Hello, Shahu Amit Kumar",
+    job: "Web-Developer",
+    urlLink: "www.google.com",
+    count: 0,
+    textValue: "",
+    kiloMeterValue: "",
+    isActive: true,
+  },
+  methods: {
+    getVariable() {
+      return this.job;
+    },
+    welcome(name) {
+      return "Hello " + name;
+    },
+    increment() {
+      return this.count++;
+    },
+    toggleClass() {
+      this.isActive = !this.isActive;
+    },
+  },
+  computed: {
+    convertTokilometer() {
+      return this.kiloMeterValue * 1000;
+    },
+  },
+});

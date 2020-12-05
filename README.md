@@ -24,3 +24,9 @@
 4) two way binding
 
 5) computed
+
+6) Dayamic CSS
+
+7) Mutiple instance vue js
+
+8) component

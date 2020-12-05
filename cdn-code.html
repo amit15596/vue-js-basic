@@ -1,9 +1,23 @@
 <html>
   <head>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        button.redClass{
+            background-color: red;
+            border: 1px solid;
+            color: white;
+        }
+        button{
+            background-color: blue;
+            border: 1px solid;
+            color: white;   
+        }
+    </style>
   </head>
   <body>
     <div id="app">
+      <owt></owt>
+      <br />
       {{ message }}
       <br />
       {{ name }}
@@ -20,8 +34,11 @@
       <input type="text" v-model="textValue">
       {{textValue}}
       <br />
-      <input type="text" v-model=
-      {{textValue}}
+      <input type="text" v-model="kiloMeterValue" placeholder="Enter Kilometer">
+      Convert Into Meter:{{ convertTokilometer }}
+      <br />
+      <button v-bind:class="{redClass:isActive}" @click="toggleClass">Toggle Class</button>
+
 
     </div>
 
