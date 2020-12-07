@@ -38,8 +38,12 @@
       Convert Into Meter:{{ convertTokilometer }}
       <br />
       <button v-bind:class="{redClass:isActive}" @click="toggleClass">Toggle Class</button>
-
-
+      <br />
+      <br />
+      First Name : <input type="text" v-model="firstname">
+      Last Name : <input type="text" v-model="lastname">
+      <br />
+      fullName: {{ fullName }}
     </div>
 
     <script src="app.js"></script>

@@ -30,3 +30,7 @@
 7) Mutiple instance vue js
 
 8) component
+
+9) getter and setter methods
+
+10) $ refrences  (this.$ref.input.value)

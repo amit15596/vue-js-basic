@@ -14,6 +14,8 @@ new Vue({
     textValue: "",
     kiloMeterValue: "",
     isActive: true,
+    firstname:"",
+    lastname:""
   },
   methods: {
     getVariable() {
@@ -27,11 +29,14 @@ new Vue({
     },
     toggleClass() {
       this.isActive = !this.isActive;
-    },
+    }  
   },
   computed: {
     convertTokilometer() {
       return this.kiloMeterValue * 1000;
     },
+    fullName(){
+      return this.firstname + " " + this.lastname
+    }
   },
 });
